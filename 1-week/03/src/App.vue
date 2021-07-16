@@ -61,7 +61,7 @@ export default {
   methods: {
     addItemToList(item) {
       let fullName = item.name + " " + item.surname;
-      this.SavedData = [...this.SavedData, fullName];
+      this.SavedData = [...new Set([...this.SavedData, fullName])];
     },
     showMeResult() {
       this.showResultPopup = !this.showResultPopup;
