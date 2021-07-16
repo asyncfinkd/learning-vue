@@ -1,5 +1,7 @@
 <template>
-  <h1>{{ messageText }}</h1>
+  <div>
+    <h1 v-once>{{ messageText }}</h1>
+  </div>
 </template>
 
 <script>
